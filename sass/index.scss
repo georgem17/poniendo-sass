@@ -1,0 +1,172 @@
+/* mobile */
+/* registrar */
+/* animacion */
+@keyframes "animacion" {
+	25% {
+		-moz-transform: rotate(339deg);
+		-webkit-transform: rotate(339deg);
+		-o-transform: rotate(339deg);
+		-ms-transform: rotate(339deg);
+		transform: rotate(339deg);
+	}
+}
+@keyframes "animaci" {
+	25% {
+		-moz-transform: translate(950px, 0px);
+		-webkit-transform: translate(950px, 0px);
+		-o-transform: translate(950px, 0px);
+		-ms-transform: translate(950px, 0px);
+		transform: translate(950px, 0px);
+	}
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	img {
+		width: 100%;
+	}
+	.recetas {
+		text-align: center;
+		justify-content: center;
+		img {
+			width: 300px;
+		}
+		h3 {
+			font-size: 15px;
+		}
+		div {
+			padding: 20px;
+		}
+		button {
+			background-color: transparent;
+		}
+	}
+	.present {
+		h3 {
+			text-align: center;
+		}
+		p {
+			padding: 20px;
+			margin: 0px;
+			text-align: center;
+		}
+	}
+}
+nav {
+	.navbar-container {
+		display: flex;
+		.navbar-item {
+			list-style: none;
+			padding: 10px 0px;
+			a {
+				text-decoration: none;
+				color: #2C272E;
+				padding: 10px;
+			}
+		}
+	}
+}
+header {
+	.logo {
+		a {
+			img {
+				width: 200px;
+			}
+		}
+	}
+}
+.navbar-header {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-menu-mobile {
+	color: #2C272E;
+	border: 1px solid #FFFFFF;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.navbar-container {
+	position: absolute;
+	background: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 0px;
+	overflow: hidden;
+	transition: height 0.4s ease;
+	margin: 0px;
+	padding: 0px;
+}
+.navbar-link {
+	font-size: 1.5rem;
+}
+#navbar-header {
+	&:target {
+		.navbar-container {
+			height: 300px;
+		}
+		.open {
+			display: none;
+		}
+		.close {
+			display: flex;
+		}
+	}
+}
+.close {
+	display: none;
+}
+footer {
+	img {
+		width: 100px;
+	}
+	text-align: center;
+	.ins {
+		width: 75px;
+	}
+}
+.reg {
+	width: 100%;
+	max-width: 0px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+.anima {
+	img {
+		width: 200px;
+	}
+	animation-name: animacion;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	position: relative;
+	text-align: center;
+}
+.ani {
+	img {
+		width: 200px;
+		padding: 15px 0px;
+	}
+	background: transparent;
+	animation-name: animaci;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	position: relative;
+}
+@media (min-width: 900px) {
+	body {
+		.recetas {
+			display: flex;
+		}
+	}
+}
